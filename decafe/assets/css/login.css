@@ -3,14 +3,6 @@ body {
   height: 100%;
 }
 
-body{
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  padding-bottom: 40px;
-  background-color: whitesmoke;
-}
-
 .form-signin {
   max-width: 330px;
   padding: 1rem;
@@ -27,7 +19,7 @@ body{
 }
 
 .form-signin input[type="password"] {
-margin-bottom: 10px;
-border-top-left-radius: 0;
-border-top-right-radius: 0;
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

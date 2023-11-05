@@ -4,7 +4,7 @@
     <title>Cari Database</title>
 </head>
 <body>
-    <form action="hasilsearch.php" method="POST">
+    <form action="hasilsearch.php" method="GET">
         <select name="kolom" id="">
             <option value="nama">nama</option>
             <option value="email">email</option>
