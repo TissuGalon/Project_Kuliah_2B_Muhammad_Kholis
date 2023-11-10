@@ -11,9 +11,9 @@
 
 </head>
 
-<body>
+<body style="height: 3000px">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container-lg">
             <a class="navbar-brand" href="#"><i class="bi bi-cup-hot"></i> DeCafe</a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -24,9 +24,9 @@
                             Username
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end mt-2">
-                            <li><a class="dropdown-item" href="#">Profil</a></li>
-                            <li><a class="dropdown-item" href="#">Setting</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> Setting</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -56,7 +56,8 @@
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1">
                                     <li class="nav-item">
-                                        <a class="nav-link active link-light" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                                        <a class="nav-link active link-light" aria-current="page" href="#"><i
+                                                class="bi bi-house"></i> Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link link-dark" href="#"><i class="bi bi-cart"></i> Order</a>
@@ -65,10 +66,12 @@
                                         <a class="nav-link link-dark" href="#"><i class="bi bi-person"></i> Customer</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-card-list"></i> Product</a>
+                                        <a class="nav-link link-dark" href="#"><i class="bi bi-card-list"></i>
+                                            Product</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-clipboard-data"></i> Report</a>
+                                        <a class="nav-link link-dark" href="#"><i class="bi bi-clipboard-data"></i>
+                                            Report</a>
                                     </li>
 
                                 </ul>
@@ -78,11 +81,32 @@
 
 
             </div>
-            <!-- Sidebar -->
-            <div class="col-lg-9 bg-dark">
-b
+            <!-- End Sidebar -->
+
+            <!-- Content -->
+            <div class="col-lg-9 mt-2">
+                <div class="card">
+                    <div class="card-header">
+                        Home
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ini adalah bagian home</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet neque recusandae,
+                            ducimus voluptatibus aliquam! Recusandae mollitia sequi nihil reiciendis iusto quae totam
+                            sit exercitationem. Modi distinctio veniam nemo soluta.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
+            <!-- End Content -->
         </div>
+
+        <div class="fixed-bottom text-center mb-2">
+            Copyright 2023 Muhammad Kholis
+        </div>
+
+
     </div>
 
 
