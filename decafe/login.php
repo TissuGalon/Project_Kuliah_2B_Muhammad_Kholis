@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.118.2">
-  <title>Signin Template · Bootstrap v5.3</title>
+  <title>DeCafe - Aplikasi Pemesanan Makanan dan Minuman Cafe</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
 
@@ -110,19 +110,19 @@
 
 
   <main class="form-signin w-100 m-auto">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" novalidate action="proses/proses_login.php" method="POST">
       <i class="bi bi-cup-hot fs-1"></i>
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        <input name="username" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
         <label for="floatingInput">Email address</label>
         <div class="invalid-feedback">
           Masukkan email yang valid
         </div>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
         <label for="floatingPassword">Password</label>
         <div class="invalid-feedback">
           Masukkan Password.
@@ -135,7 +135,7 @@
           Remember me
         </label>
       </div>
-      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+      <button class="btn btn-primary w-100 py-2" type="submit" name="submit_validate" value="abc">Sign in</button>
       <p class="mt-5 mb-3 text-body-secondary">&copy; 2023-2024</p>
     </form>
   </main>
