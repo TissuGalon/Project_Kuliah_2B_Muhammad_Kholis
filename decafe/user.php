@@ -325,6 +325,39 @@ while ($record = mysqli_fetch_array($query)) {
                 <!-- end modal delete -->
 
 
+                  <!-- Modal reset password-->
+                  <div class="modal fade" id="ModalResetPassword<?php echo $row['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Reset Password</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="needs-validation" novalidate action="proses/proses_reset_password.php" method="POST">
+                                    <input type="hidden" value="<?php echo $row['id'] ?>" name="id">
+                                    <div class="col-lg-12">
+                                        <?php 
+                                        if ($row['username'] == $_SESSION['username_decafe']){
+                                            echo "<div class='alert alert-danger'>Anda Tidak Dapat Mereset Password Sendiri</div>";
+                                        }else{
+                                            echo "Apakah Anda Yakin Ingin Mereset password User <b>$row[username]</b> menjadi passsword bawaan sistem yaitu <b>PASSWORD</b>";
+                                        }
+                                        ?>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-success" name="input_user_validate" value="12345" <?php echo ($row['username'] == $_SESSION['username_decafe']) ? 'disabled' : '' ; ?> >Reset Password</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal reset passsword -->
+
+
+
                 <?php
             }
             if (empty($result)) {
@@ -383,6 +416,9 @@ while ($record = mysqli_fetch_array($query)) {
                                         <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal"
                                             data-bs-target="#ModalDelete<?php echo $row['id'] ?>"><i
                                                 class="bi bi-trash"></i></button>
+                                        <button class="btn btn-secondary btn-sm me-1" data-bs-toggle="modal"
+                                            data-bs-target="#ModalResetPassword<?php echo $row['id'] ?>"><i
+                                                class="bi bi-key"></i></button>
                                     </td>
                                 </tr>
 
