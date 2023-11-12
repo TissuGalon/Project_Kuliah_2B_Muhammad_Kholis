@@ -23,6 +23,10 @@
                                 Dashboard</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'menu') ? 'active link-light' : 'link-dark' ?> ps-2"
+                                href="menu"><i class="bi bi-cart"></i> Daftar Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'order') ? 'active link-light' : 'link-dark' ?> ps-2"
                                 href="order"><i class="bi bi-cart"></i> Order</a>
                         </li>
@@ -30,22 +34,23 @@
                             <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'customer') ? 'active link-light' : 'link-dark' ?> ps-2"
                                 href="customer"><i class="bi bi-person"></i> Customer</a>
                         </li>
+                        <?php if($hasil['level']==1){ ?>
                         <li class="nav-item">
                             <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'product') ? 'active link-light' : 'link-dark' ?> ps-2"
-                                href="product"><i class="bi bi-card-list"></i>
-                                Product</a>
+                                href="user"><i class="bi bi-card-list"></i>
+                                User</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'report') ? 'active link-light' : 'link-dark' ?> ps-2"
                                 href="report"><i class="bi bi-clipboard-data"></i>
                                 Report</a>
                         </li>
+                        <?php } ?>
 
                     </ul>
                 </div>
             </div>
     </nav>
-
 
 </div>
 <!-- End Sidebar -->
