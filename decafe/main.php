@@ -43,7 +43,7 @@ $hasil = mysqli_fetch_array($query);
 
         </div>
 
-        <div class="fixed-bottom text-center mb-2">
+        <div class="fixed-bottom text-center bg-light py-2 mb-2">
             Copyright 2023 Muhammad Kholis
         </div>
 
