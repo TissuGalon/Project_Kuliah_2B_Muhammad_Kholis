@@ -27,6 +27,10 @@
                                 href="menu"><i class="bi bi-cart"></i> Daftar Menu</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'katmenu') ? 'active link-light' : 'link-dark' ?> ps-2"
+                                href="katmenu"><i class="bi bi-tags"></i> Kategori Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'order') ? 'active link-light' : 'link-dark' ?> ps-2"
                                 href="order"><i class="bi bi-cart"></i> Order</a>
                         </li>

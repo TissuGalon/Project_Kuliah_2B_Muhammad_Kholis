@@ -28,9 +28,9 @@ $hasil = mysqli_fetch_array($query);
 <body style="height: 3000px">
     <!-- Header -->
     <?php include "header.php"; ?>
-    <!-- Header -->
+    <!-- End Header -->
     <div class="container-lg">
-        <div class="row">
+        <div class="row mb-5">
             <!-- Sidebar -->
             <?php include "sidebar.php"; ?>
             <!-- End Sidebar -->
