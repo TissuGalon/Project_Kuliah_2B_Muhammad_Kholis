@@ -15,5 +15,6 @@ if(!empty($_POST['edit_order_validate'])){
             window.location="../order</script>';
         }
 
-}echo $message;
+}
+echo $message;
 ?>
