@@ -10,15 +10,14 @@ if (!empty($_POST['submit_validate'])) {
         $_SESSION['username_decafe'] = $username;
         $_SESSION['level_decafe'] = $hasil['level'];
         $_SESSION['id_decafe'] = $hasil['id'];
-        
+
         header('location:../home');
     } else { ?>
         <script>
-            alert('Username atau password yang anda masukkan salah');
-            window.location = '../login'
+alert('username atau password anda salah');
+window.location='../login'
         </script>
-        <?php
+<?php
     }
 }
-
 ?>
