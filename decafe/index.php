@@ -27,6 +27,9 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
         $page = "home.php";
         include "main.php";
     }
+} elseif (isset($_GET['x']) && $_GET['x'] == 'dapur') {
+    $page = "dapur.php";
+    include "main.php";
 } elseif (isset($_GET['x']) && $_GET['x'] == 'report') {
     if ($_SESSION['level_decafe'] == 1) {
         $page = "report.php";
